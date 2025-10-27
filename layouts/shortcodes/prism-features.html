@@ -1,6 +1,6 @@
 {{ $type := .Get 0 }}
-{{ $languages := readDir "node_modules/prismjs/components" }}
-{{ $plugins := readDir "node_modules/prismjs/plugins" }}
+{{ $languages := readDir "prismjs/components" }}
+{{ $plugins := readDir "prismjs/plugins" }}
 
 {{ if eq $type "languages" }}
   {{ range after 1 $languages -}}

@@ -1,7 +1,7 @@
 /*! purgecss start ignore */
 
 {{ range $.Site.Params.prism.plugins }}
-  {{ $path := printf "node_modules/prismjs/plugins/%s/prism-%s.css" . . }}
+  {{ $path := printf "prismjs/plugins/%s/prism-%s.css" . . }}
   {{ $pluginCSS := resources.Get $path }}
   {{ if $pluginCSS }}
     {{ $importPath := trim $pluginCSS.RelPermalink "/" }}
