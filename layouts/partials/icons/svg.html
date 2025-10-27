@@ -1,4 +1,4 @@
-{{ $path := lower . }}
+{{ $path := printf "node_modules/%s" (lower .) }}
 {{ $resource := resources.Get $path }}
 {{ if not $resource }}
   {{ errorf "File '%s' does not exist" $path }}
