@@ -16,7 +16,7 @@
     target = "assets/css/critical/44-json-resume.css"
 [[mounts]]
   # required by hugo-mod-json-resume
-  source = "node_modules/simple-icons/icons"
+  source = "./node_modules/simple-icons/icons"
   target = "assets/simple-icons"
 [[mounts]]
   source = "assets"
@@ -31,19 +31,19 @@
   source = "static"
   target = "static"
 [[mounts]]
-  source = "node_modules/prismjs"
+  source = "./node_modules/prismjs"
   target = "assets/prismjs"
 [[mounts]]
-  source = "node_modules/prism-themes/themes"
+  source = "./node_modules/prism-themes/themes"
   target = "assets/prism-themes"
 [[mounts]]
-  source = "node_modules/typeface-fira-code/files"
+  source = "./node_modules/typeface-fira-code/files"
   target = "static/fonts"
 [[mounts]]
-  source = "node_modules/typeface-roboto-slab/files"
+  source = "./node_modules/typeface-roboto-slab/files"
   target = "static/fonts"
 [[mounts]]
-  source = "node_modules/@tabler/icons/icons"
+  source = "./node_modules/@tabler/icons/icons"
   target = "assets/tabler-icons"
 [[mounts]]
   # Add hugo_stats.json to Hugo's server watcher
