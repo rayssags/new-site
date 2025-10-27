@@ -1,0 +1,125 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+main {
+  align-items: start;
+  display: grid;
+  grid-area: main;
+  grid-template-areas: "empty content sidebar";
+  grid-template-columns: 1fr minmax(0, 650px) 4fr;
+}
+
+
+
+
+header {
+  background: var(--bg1);
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main,
+footer {
+  margin: 0.5em 1.1em;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  grid-area: sidebar;
+  margin-top: 3rem;
+  position: sticky;
+  top: 2rem;
+
+  @media (--lg) {
+    display: flex;
+  }
+}
+
+main {
+  display: flex;        /* horizontal layout */
+  gap: 2rem;            /* space between sidebar and content */
+
+  .content {
+    flex: 1;            /* content takes remaining width */
+  }
+
+  .sidebar {
+    max-width: 300px;   /* fixed sidebar width */
+    flex-shrink: 0;     /* prevent shrinking */
+  }
+}
+
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .home main {
+    display: flex;
+    flex-direction: column;
+  }
+   .home  .sidebar {
+      max-width: 100%;
+      margin: 3rem auto 1.5rem auto;
+     display: block !important;
+     position: static;
+    }
+  }
+
+/* Medium screens: sidebar side-by-side with content */
+@media (min-width: 768px) and (max-width: 991px) {
+ .home  main {
+    display: flex;           /* horizontal layout */
+    flex-direction: row;     /* sidebar next to content */
+    gap: 2.0rem;             /* space between content and sidebar */
+  }
+
+  .home .sidebar {
+    display: flex;            /* make sure it’s visible */
+    flex-direction: column;   /* stack sidebar items vertically */
+    width: 300px;             /* fixed width for sidebar */
+    position: sticky;         /* sticky works on medium screens */
+    top: 3rem;                /* distance from top when scrolling */
+    margin: 3rem;                /* reset margins for side-by-side layout */
+  }
+}
+
+
+/* Base margin (mobile-first) */
+main {
+  margin-inline: 1rem;   /* small side margins */
+  margin-block: 0.5rem;  /* top/bottom spacing */
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (min-width: 768px) {
+  main {
+    margin-inline: 100px;
+  }
+}
+
+/* Large screens (desktop and up) */
+@media (min-width: 1200px) {
+  main {
+    margin-inline: 200px;
+  }
+}
+
+/* Extra-large screens (big monitors) */
+@media (min-width: 1600px) {
+  main {
+    margin-inline: 300px;
+  }
+}

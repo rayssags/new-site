@@ -1,0 +1,31 @@
+{{ $resume := index .Site.Data.json_resume .Site.Language.Lang }}
+
+<div class="timeline">
+
+  <!-- Education -->
+  <h2>{{ i18n "menu.education" }}</h2> <!-- add these IDs in your i18n YAML -->
+  {{ range $resume.education }}
+    <div class="archive-title bio">
+      <div class="archive-year">
+        <strong>{{ .startDate }}{{ if ne .endDate "" }} - {{ .endDate }}{{ end }}</strong>
+        <br>
+        {{ .studyType }} {{ i18n "cv.in" }} {{ .area }} {{ i18n "cv.at" }} 
+        <a href="{{ .url }}">{{ .institution }}</a>
+      </div>
+    </div>
+  {{ end }}
+
+  <!-- Work -->
+  <h2>{{ i18n "menu.work" }}</h2>
+  {{ range $resume.work }}
+    <div class="archive-title">
+      <div class="archive-year">
+        <strong>{{ .startDate }}{{ if ne .endDate "" }} - {{ .endDate }}{{ end }}</strong>
+        <br>
+        {{ .position }} {{ i18n "cv.at" }} 
+        <a href="{{ .url }}">{{ .name }}</a>
+      </div>
+    </div>
+  {{ end }}
+
+</div>

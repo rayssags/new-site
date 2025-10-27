@@ -1,0 +1,180 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rayssa Guimarães Silva",
+    "label": "",
+    "image": "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8144975Z3",
+    "email": "rgs[at]astro.ufrj",
+    "phone": "",
+    "summary": "Resuminho sobre mim e tal",
+    "location": {
+      "city": ""
+    },
+    "profiles": [
+      {
+        "network": "lattes",
+        "username":"lattes",
+        "url": "http://lattes.cnpq.br/7456987747174994"
+      },
+      {
+        "network": "ORCID",
+        "username":"0000-0003-0634-7710",
+        "url": "https://orcid.org/0000-0003-0634-7710"
+      },
+      /*{
+        "network": "github",
+        "url": ""
+      },
+      {
+        "network": "zotero",
+        "url": ""
+      }*/
+    ]
+  },
+  "work": [
+    {
+      "name": "Brazillian Institute of Economics",
+      "location": "",
+      "description": "",
+      "position": "Programming internship",
+      "url": "https://portal.fgv.br/en/brazilian-institute-economics",
+      "startDate": "11/2018",
+      "endDate": "11/2019",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Federal University of Rio de Janeiro",
+      "location": "",
+      "description": "",
+      "position": "PIBIC grantee",
+      "url": "https://ufrj.br/",
+      "startDate": "03/2018",
+      "endDate": "07/2018",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  /*"volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "url": "http://coderdojo.example.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": ["Awarded 'Teacher of the Month'"]
+    }
+  ],*/
+  "education": [
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "PhD",
+      "startDate": "2023",
+      "endDate": "now",
+      "score": "",
+      "courses": []
+    },  
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "MSc",
+      "startDate": "2020",
+      "endDate": "2022",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "BSc",
+      "startDate": "2017",
+      "endDate": "2020",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Federal University of Rio de Janeiro",
+      "url": "https://ufrj.br/",
+      "area": "Bioprocess Engineering (interrupted)",
+      "studyType": "BSc",
+      "startDate": "2014",
+      "endDate": "2017",
+      "score": "",
+      "courses": []
+    }
+  ],
+/*  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],*/
+  "skills": [
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": ["Mpeg", "MP4", "GIF"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Miss Direction",
+      "description": "A mapping engine that misguides you",
+      "highlights": [
+        "Won award at AIHacks 2016",
+        "Built by all women team of newbie programmers",
+        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+      ],
+      "keywords": ["GoogleMaps", "Chrome Extension", "Javascript"],
+      "startDate": "2016-08-24",
+      "endDate": "2016-08-24",
+      "roles": ["Team lead", "Designer"],
+      "entity": "Smoogle",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}

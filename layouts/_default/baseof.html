@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html
+  lang="{{ .Site.Language.Lang | default "en" }}"
+  data-theme="{{ .Param "defaultTheme" | default "light" }}"
+>
+  {{ partial "head/head.html" . }}
+  <body class="{{ if .IsHome }}home{{ end }}">
+    <div class="layout">
+      {{ partial "header.html" . }}
+      <main>
+          {{ partial "sidebar.html" . }}
+        <div class="content">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>

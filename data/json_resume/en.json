@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Rayssa Guimarães Silva",
+    "label": "",
+    "image": "/images/ray.jpg",
+    "email": "rgs[at]astro.ufrj",
+    "phone": "",
+    "summary": "Resuminho sobre mim e tal",
+    "location": {
+      "city": ""
+    },
+    "profiles": [
+      {
+        "network": "lattes",
+        "username":"7456987747174994",
+        "url": "http://lattes.cnpq.br/7456987747174994"
+      },
+      {
+        "network": "ORCID",
+        "username":"0000-0003-0634-7710",
+        "url": "https://orcid.org/0000-0003-0634-7710"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Brazillian Institute of Economics",
+      "location": "",
+      "description": "",
+      "position": "Programming internship",
+      "url": "https://portal.fgv.br/en/brazilian-institute-economics",
+      "startDate": "11/2018",
+      "endDate": "11/2019",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Federal University of Rio de Janeiro",
+      "location": "",
+      "description": "",
+      "position": "PIBIC grantee",
+      "url": "https://ufrj.br/",
+      "startDate": "03/2018",
+      "endDate": "07/2018",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "PhD",
+      "startDate": "2023",
+      "endDate": " ",
+      "score": "",
+      "courses": []
+    },  
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "MSc",
+      "startDate": "2020",
+      "endDate": "2022",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Valongo Observatory/UFRJ",
+      "url": "https://ufrj.br/",
+      "area": "Astronomy",
+      "studyType": "BSc",
+      "startDate": "2017",
+      "endDate": "2020",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Federal University of Rio de Janeiro",
+      "url": "https://ufrj.br/",
+      "area": "Bioprocess Engineering (interrupted)",
+      "studyType": "BSc",
+      "startDate": "2014",
+      "endDate": "2017",
+      "score": "",
+      "courses": []
+    }
+  ]
+}
