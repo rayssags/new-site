@@ -1,15 +1,11 @@
 /*! purgecss start ignore */
-{{ range (readDir "assets/prismjs/plugins") }}
-  {{ printf "Plugin folder: %s" .Name | safeHTML }}
-{{ end }}
-
 {{ range $.Site.Params.prism.plugins }}
   {{ $path := printf "prismjs/plugins/%s/prism-%s.css" . . }}
   {{ $pluginCSS := resources.Get $path }}
   {{ if $pluginCSS }}
     {{ $importPath := trim $pluginCSS.RelPermalink "/" }}
     {{ printf "/* Import stylesheet for Prism plugin '%s' from '%s' */" . $importPath }}
-    @import "{{ $importPath }}";
+    @import "node_modules/prismjs/plugins/{{ . }}/prism-{{ . }}.css";
   {{ end }}
 {{ end }}
 
