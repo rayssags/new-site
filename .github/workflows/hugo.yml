@@ -51,8 +51,7 @@ jobs:
       - name: Debug mounts
         run: |
           echo "PWD: $(pwd)"
-          ls -R node_modules/simple-icons/icons | head -n 10 || echo "simple-icons not found"
-          ls -R assets/simple-icons/icons | head -n 10 || echo "simple-icons not found"
+          ls -R node_modules
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
