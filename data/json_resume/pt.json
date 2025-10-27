@@ -11,11 +11,6 @@
       "city": ""
     },
     "profiles": [
-            {
-        "network": "lattes",
-        "username":"7456987747174994",
-        "url": "http://lattes.cnpq.br/7456987747174994"
-      },
       {
         "network": "ORCID",
         "username":"0000-0003-0634-7710",
