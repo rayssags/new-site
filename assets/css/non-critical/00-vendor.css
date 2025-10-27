@@ -1,4 +1,7 @@
 /*! purgecss start ignore */
+{{ range (readDir "assets/prismjs/plugins") }}
+  {{ printf "Plugin folder: %s" .Name | safeHTML }}
+{{ end }}
 
 {{ range $.Site.Params.prism.plugins }}
   {{ $path := printf "prismjs/plugins/%s/prism-%s.css" . . }}
